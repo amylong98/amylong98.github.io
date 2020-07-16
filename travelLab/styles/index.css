@@ -1,0 +1,420 @@
+/*CSS DOCUMENT*/
+html,
+body {
+	overflow-x: hidden;
+
+}
+
+body {
+	background-color: #eee;
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+/* header and nav styling */
+header {
+	background-color: #333;
+	color: #fff;
+	margin: 0;
+	padding: 0.5em;
+	margin-bottom: 5em;
+}
+
+header img {
+	margin-top: 1em;
+}
+
+nav {
+	display: block;
+	position: relative;
+	font-size: 1.1em;
+	text-align: right;
+}
+
+nav a {
+	padding-right: 1.5em;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* header and nav styling END */
+
+/* link styling */
+a:active {
+	color: #F6AE2D;
+}
+
+a:hover {
+	color: #F6AE2D;
+}
+
+/* link styling END */
+
+/* Contact form */
+#contactForm {
+	padding: 2em;
+	margin: auto;
+	text-align: center;
+}
+
+#contactForm input,
+textarea {
+	height: 2.4em;
+	font-size: 1em;
+	padding: 0.5em;
+}
+
+textarea {
+	border: 1px solid #ddd;
+	margin-top: 1em;
+	height: 5em;
+	width: 22em;
+	resize: none;
+}
+
+#contactForm h1 {
+	font-size: 3.5em;
+	font-family: 'Roboto', sans-serif;
+}
+
+#submitContact {
+	font-size: 1em;
+	background-color: #333;
+	border: 1px solid #333;
+	padding: 1.2em;
+	color: #fff;
+	color: #fff;
+	min-width: 20%;
+}
+
+/* Contact form END */
+
+
+/* Initial form */
+#myForm {
+	padding: 2em;
+	display: block;
+	margin: auto;
+	text-align: center;
+	width: 90%;
+}
+
+#myForm input {
+	height: 2.4em;
+	font-size: 1em;
+	padding: 0.5em;
+}
+
+#submitBtn {
+	font-size: 1em;
+	background-color: #333;
+	border: 1px solid #333;
+	padding: 1.2em;
+	color: #fff;
+	width: 100%;
+	top: 350px;
+}
+
+input {
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid #DDDDDD;
+}
+
+input:focus {
+	box-shadow: 0 0 5px rgba(246, 174, 45, 1);
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid rgba(246, 174, 45, 1);
+}
+
+/* Code from: https://leaverou.github.io/bubbly/ */
+button.speech-bubble {
+	position: relative;
+	z-index: 100;
+	background: #ffffff;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+	border: none;
+	width: 50%;
+	margin: auto;
+	padding: 1em;
+	display: block;
+}
+
+.roundedBottom {
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+}
+
+.roundedTop {
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+}
+
+#formarea {
+	background-color: #fff;
+	margin: auto;
+	width: 50%;
+	visibility: hidden;
+	display: none;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 10%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-bottom-color: #ffffff;
+	border-top: 0;
+	margin-left: -20px;
+	margin-top: -20px;
+	display: block;
+}
+
+/* Initial form styling END */
+
+/*Second form styling*/
+
+#detailsForm {
+	background-color: #fff;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 0.3em 0.6em;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+
+}
+
+#detailsForm input {
+	padding: 2em 0;
+	margin: 2em;
+}
+
+
+#bookingreference {
+	background-color: #939393;
+	color: #565555;
+	border: #565555;
+
+}
+
+#detailsForm input {
+	height: 2.4em;
+	font-size: 1em;
+	padding: 0.5em;
+	margin-right: 2em;
+}
+
+#detailsForm label {
+	margin-left: 2em;
+}
+
+/* Second form styling END*/
+
+/* Add padding to tooltip */
+#hover {
+	margin-right: -1em;
+}
+
+/* Tooltip END */
+
+/* Date picker styling - code borrowed from https://gist.github.com/miwahall/7028640 and edited to suit needs */
+.ui-datepicker table {
+	width: 100%;
+}
+
+.ui-datepicker-header {
+	background: #F6AE2D;
+	color: #FFF;
+	padding: 0 0.5em 0 0.5em;
+}
+
+.ui-datepicker-title {
+	text-align: center;
+	font-size: 15px;
+
+}
+
+.ui-datepicker-prev {
+	float: left;
+	cursor: pointer;
+	background-position: center -30px;
+}
+
+.ui-datepicker-next {
+	float: right;
+	cursor: pointer;
+	background-position: center 0px;
+}
+
+.ui-datepicker th {
+	background-color: #fff;
+	text-transform: uppercase;
+	font-size: 8pt;
+	color: #666666;
+}
+
+.ui-datepicker tbody td {
+	padding: 0;
+	background-color: #ffffff;
+}
+
+
+.ui-datepicker a {
+	text-decoration: none;
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: inline-block;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	color: #ffffff;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+	background-color: #fff;
+	color: #666;
+	height: 40px;
+	width: 40px;
+
+}
+
+.ui-datepicker-calendar .ui-state-hover {
+	background: #F6AE2D;
+	color: #FFFFFF;
+}
+
+/* Date picker styling END */
+
+/* Save changes button */
+#savechanges {
+	font-size: 1em;
+	padding: 1.2em;
+	background-color: #333;
+	color: #fff;
+	border: 1px solid #eee;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 1em;
+	top: 350px;
+	grid-column: 1 / span 2;
+}
+
+/* Save changes button END*/
+
+/* Styling for border highlight when input is invalid */
+.wronginput {
+	box-shadow: 0 0 5px rgba(235, 64, 52, 1);
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid rgba(235, 64, 52, 1);
+}
+
+/* Styling END*/
+
+/* Styling for message saying fields have been left blank */
+#leftblank {
+	padding-left: 2em;
+}
+
+/* Styling END */
+
+/* Styling for output message that changes have been saved and return to home button */
+#changesSaved {
+	background-color: #fff;
+	width: 20%;
+	margin: auto;
+	padding: 5em;
+	font-size: 1.3em;
+}
+
+#return {
+	font-size: 0.9em;
+	padding: 1em;
+	background-color: #333;
+	color: #fff;
+	border: 1px solid #eee;
+	width: 90%;
+	margin: auto;
+	margin-top: 3em;
+}
+
+/* Styling END */
+
+/* about us and filler image styling */
+#aboutus {
+	margin-top: 10em;
+	background-color: #f6ae2d;
+	color: #333;
+	padding: 2em;
+	padding-right: 2em;
+	font-size: 1em;
+	display: inline-block;
+	width: 100%;
+}
+
+#aboutus p {
+	width: 80%;
+}
+
+#fillerimg {
+	display: inline-block;
+	width: 100%;
+}
+
+h2 {
+	font-size: 3.5em;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+/* about us and filler image styling*/
+
+/* Footer styling */
+footer {
+	color: #fff;
+	background: #333;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 1em;
+}
+
+footer a {
+	color: #F6AE2D;
+}
+
+footer p {
+	margin: 3px;
+	padding-right: 1em;
+}
+
+#accept,
+#decline {
+	padding: 0.5em;
+	width: 7em;
+	float: right;
+	margin-right: 2em;
+	margin-top: 1em;
+	font-size: 0.8em;
+	background-color: #F6AE2D;
+	color: #333;
+	border: none;
+}
+
+/* Footer styling END */

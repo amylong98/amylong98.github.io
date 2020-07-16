@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+	<!--    META TAGS -->
+	<meta charset="utf-8" />
+	<meta name="description" content="Package holiday booking details" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>TravelLab Package Holidays</title>
+	<!--    STYLESHEETS -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
+	<link type="text/css" href="styles/index.css" rel="stylesheet">
+	<link type="text/css" href="styles/media-queries.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<!--    HEADER -->
+	<header>
+		<img src="images/travellab.png" height="50px" alt="TravelLab logo">
+		<nav>
+			<a href="#myForm">My Booking</a>
+			<a href="#aboutus">About TravelLab</a>
+			<a href="#contactForm">Contact Us</a>
+		</nav>
+	</header>
+
+	<!--    MAIN CONTENT -->
+	<button class="speech-bubble roundedBottom">
+		<h1>Find my booking</h1>
+	</button>
+	<div id="formarea" role="form">
+		<form id="myForm" onsubmit="return validateForm(), return validateBookingRef(), return displayQuote()" method="post" required>
+
+			<input type="text" class="entername" id="fname" name="firstname" placeholder="First name">
+			<br><span id="name1"></span><br>
+
+			<input type="text" name="lastname" class="entername" id="lname" placeholder="Last name" required>
+			<br><span id="name2"></span><br>
+
+			<input type="text" class="bref" name="bookingref" id="bref" placeholder="Booking reference" required>
+			<img src="images/tooltip.png" height="20px" width="20px" id="hover">
+			<br><span id="book"></span>
+			<p></p>
+			<button id="submitBtn">Find Your Booking</button>
+		</form>
+		<section id="additionalInfo">
+			<form id="detailsForm" onsubmit="return validateForm()" method="post" required>
+				<p>
+					<label for="destination">Destination:</label><br>
+					<input type="text" name="destination" id="destination" placeholder="Destination">
+				</p>
+				<p>
+					<label for="deptdate">Departure date:</label><br>
+					<input type="text" name="deptdate" id="deptdate" placeholder="Departure date">
+				</p>
+				<p>
+					<label for="duration">Duration:</label><br>
+					<input type="number" min="1" name="duration" id="duration" placeholder="Duration (nights)">
+				</p>
+				<p>
+					<label for="partysize">Party size:</label><br>
+					<input type="number" min="1" name="partysize" id="partysize" placeholder="Party size">
+				</p>
+				<p>
+					<label for="dairport">Departure Airport:</label><br>
+					<input type="text" name="dairport" id="dairport" placeholder="Departure airport">
+				</p>
+				<p>
+					<label for="aairport">Arrival airport:</label><br>
+					<input type="text" name="aairport" id="aairport" placeholder="Arrival airport">
+				</p>
+				<p><span id="leftblank" style="color: #eb4034"></span></p>
+				<p>&nbsp;</p>
+				<button id="savechanges">Save changes</button>
+			</form>
+		</section>
+	</div>
+	<div id="changesSaved" class="roundedBottom roundedTop" role="contentinfo">Thank you for updating your details. Your changes have been saved.
+		<input type="button" onclick="window.location.reload();" value="Return to Home" id="return">
+	</div>
+	<section id="aboutus">
+		<h2>About us</h2>
+		<p>Welcome to TravelLab, your number one source for all things travel. We're dedicated to giving you the very best of service, with a focus on luxury holiday packages, affordable prices, and a friendly service.
+			<br><br>
+			Founded in 2019 by James, TravelLab has come a long way from its beginnings in Northern Ireland. When James first started out, his passion for luxury trips at an affordable price drove him to quit his day job so that TravelLab can offer you the best quality holidays at real-world prices. We now serve customers all over the world, and are thrilled that we're able to turn our passion into our own website.
+			<br><br>
+
+			We hope you enjoy our holidays as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.
+			<br><br>
+
+			Sincerely,
+			<br><br>
+			TravelLab</p>
+	</section>
+	<img id="fillerimg" src="images/holiday-img-min.jpeg" alt="Sunglasses resting on sand in front of the ocean">
+	<!-- CONTACT FORM -->
+	<form id="contactForm">
+		<h2>Get in touch</h2>
+        <label for="contactname">Contact name:</label><br>
+		<input type="text" id="contactname" placeholder="Name"><br>
+        <label for="contactemail">Contact email:</label><br>
+		<input type="text" id="contactemail" placeholder="Email address"><br>
+        <label for="query">Query:</label><br>
+		<textarea id="query" placeholder="What is your query?"></textarea><br>
+		<input type="submit" id="submitContact"><br>
+		<span id="thankYou"></span>
+	</form>
+	<!--     FOOTER -->
+	<footer id="tandc">
+		<p>This website stores your data using your browser's LocalStorage. More information can be found in the <a href="#">Privacy Policy</a>. By clicking 'Accept', you consent to the storage of your information.</p>
+		<input type="button" id="decline" name="decline" value="Decline">
+		<p> <input type="submit" id="accept" name="accept" value="Accept">
+		</p>
+	</footer>
+
+	<!--    SCRIPTS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="scripts/index-min.js"></script>
+
+</body>
+
+</html>

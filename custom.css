@@ -1,0 +1,178 @@
+html, body {
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    color:#bababa;
+}
+
+.full-height {
+   min-height: 100vh;
+}
+.active{
+    font-weight: 700 !important;
+    color: #F3A712 !important;
+  }
+
+
+.center {
+    display: block;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    font-weight: 500;
+    color:#bababa;
+    padding-top:5%;
+}
+
+.title {
+        padding-top: 20%;
+}
+
+#portfolio {
+    padding-bottom: 5%;
+}
+#contact {
+    padding: 10% 0 5% 0;
+}
+nav {
+    background-color: #FFFFFF;
+}
+.nav-tabs a {
+    color:#F3A712;
+    font-weight: 300;
+    transition: background-color 0.2s ease;
+}
+
+.nav-tabs a:hover {
+    color:#2D2D2A;
+}
+
+.scroll-top {
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    display: none;
+  }
+  .scroll-top i {
+    display: inline-block;
+    color: #F3A712;
+  }
+
+#scrollButton{
+    margin-top: 7%;
+    text-align: center;
+}
+
+#scrollButton a {
+    color: #bababa;
+}
+
+#scrollButton a:hover {
+    color:#F3A712;
+    transition: color 0.2s ease;
+}
+
+/* .thumbnail img{
+    max-height:280px;
+}
+
+.thumbnail {
+    position: relative;
+    padding: 10px;
+    height: 390px;
+}
+
+.thumbnail a {
+    text-decoration: none;
+} */
+
+.caption h3 {
+    color:#999797;
+}
+
+a {
+    color:#F3A712;
+}
+
+/* Back to top button
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:70px;
+    height:40px;
+    text-indent:-9999px;
+    display:none;
+}
+
+#scroll span {
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:15px solid transparent;
+    border-bottom-color: #F3A712;
+    z-index: 100;
+}
+
+#scroll:hover {
+    opacity: 0.4;
+} */
+
+.portfolio-item-n {
+    background-color: #e3e3e3;
+    padding: 2rem;
+}
+.portfolio-item-m {
+    background-color: #ffffff;
+    padding: 2rem;
+}
+.icons{
+    padding: 2em;
+    margin: auto;
+    display: block;
+}
+
+#about {
+    padding-top: 10%;
+}
+
+#aboutMe {
+    text-align: left;
+}
+
+#aboutMe a {
+    color: #F3A712;
+}
+
+#email {
+    color: #F3A712;
+    text-decoration: underline;
+}
+.fa-paper-plane {
+    color: #F3A712;
+}
+
+.portfolio-item-heading {
+    color: #2D2D2A !important;
+    text-decoration: underline;
+}
+@media (max-width: 600px){
+    #aboutMe {
+        min-width: 100%;
+    }
+}

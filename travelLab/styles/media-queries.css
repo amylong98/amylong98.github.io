@@ -1,0 +1,66 @@
+@media only screen and (max-width: 768px) {
+    button.speech-bubble {
+        width: 90%;
+    }
+
+    #formarea {
+        width: 90%;
+
+    }
+
+    #submitBtn {
+        width: 100%;
+    }
+
+    #detailsForm {
+        display: block;
+
+    }
+
+    nav {
+        text-align: center;
+        font-size: 1em;
+    }
+
+    nav a {
+        padding-right: none;
+    }
+
+    #changesSaved {
+        width: 90%;
+        font-size: 0.9em;
+        padding: 1em;
+
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    button.speech-bubble {
+        width: 90%;
+    }
+
+    #formarea {
+        width: 90%;
+        font-size: 1.4em;
+    }
+
+    #submitBtn {
+        width: 100%;
+    }
+
+    #aboutus,
+    footer {
+        font-size: 1.4em;
+    }
+}
+
+@media only screen and (min-width:2560px) {
+    body {
+        width: 80%;
+        margin: auto;
+    }
+
+    footer {
+        width: 80%;
+    }
+}
