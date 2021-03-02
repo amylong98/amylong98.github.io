@@ -2,101 +2,97 @@
 <html lang="en">
 
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134719888-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134719888-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-134719888-2');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-	<!-- FontAwesome -->
-	<script src="https://kit.fontawesome.com/6dee7dbf57.js" crossorigin="anonymous"></script>
-	<meta charset="utf-8">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
+        gtag('config', 'UA-134719888-2');
+    </script>
 
-	<title>Amy Long. Web Developer.</title>
-	<!-- Styles -->
-	<link href="custom.css" rel="stylesheet">
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/6dee7dbf57.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <title>Amy Long. Web Developer.</title>
+    <!-- Styles -->
+    <link href="custom.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
-	<nav class="navbar fixed-top navbar-light navbar-expand-lg" id="top">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg" id="top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
 
-				<a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li>
-					<a class="nav-link" href="#about">About</a>
-				</li>
-				<li>
-					<a class="nav-link" href="#portfolio">Portfolio</a>
-				</li>
-				<li>
-					<a class="nav-link" href="#contact">Get In Touch</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-	<div class="container-fluid my-auto">
-		<div class="full-height" id="home">
-			<h4 class="title">Hi, I'm Amy.</h4>
-			<div id="scrollButton">
-				<a href="#about"><i class="far fa-hand-point-down fa-2x"></i></a>
-			</div>
-			<button class="btn scroll-top" data-scroll="up" type="button" style="display:none;">
+                <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#contact">Get In Touch</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid my-auto">
+        <div class="full-height" id="home">
+            <h4 class="title">Hi, I'm Amy.</h4>
+            <div id="scrollButton">
+                <a href="#about"><i class="far fa-hand-point-down fa-2x"></i></a>
+            </div>
+            <button class="btn scroll-top" data-scroll="up" type="button" style="display:none;">
 				<i class="far fa-hand-point-up fa-2x"></i>
 			</button>
-		</div>
-		<div class="full-height">
-			<div class="row" id="about">
-				<div class="col-sm-6"><img class="img-fluid m-auto d-block pb-2" width="500em" src="img/me.JPG"></div>
-				<div class="col-sm-6">
-					<p id="aboutMe" class="w-75">I'm a 22 year old Web Developer from Belfast. I recently graduated from
-						Ulster University with First Class Honours in Interactive Multimedia Design BSc.
-						<br><br> I have a particular interest in front-end design and development using JavaScript and
-						CSS, and in my spare time I'm brushing up on my knowledge of frameworks such as Node and Vue,
-						while learning new skills in the likes of React.
-						<br>
-						<br>You can <a href="AmyLongCV2020.pdf">check out my CV here.</a></p>
-				</div>
-			</div>
-		</div>
-		<div id="portfolio">
-			<div class="full-height">
-				<h4 class="title" style="padding-bottom: 5%;">Portfolio</h4>
-				<div class="row">
-					<div class="col-sm-6 portfolio-item-n">
-						<a class="portfolio-item-heading" href="newsSite/news_site.html">
-							<h2>News site (The Guardian API)</h2>
-						</a>
-						<p>This mini-project was created to meet the requirements for one of my final year modules. The
-							brief was to create a website which could dynamically display articles using an API from a
-							news website. The user should be able to click to read the articles; view different
-							categories; be shown the top stories; and perform a search, both online and offline. The
-							site was also to be a single page application. <br> I used The Guardian's API and JavaScript
-							to complete this, and used Bootstrap for styling. I also used the OpenWeatherMap API to add
-							an extra feature allowing users to check the weather in their city or search for another
-							city.</p>
-					</div>
-					<div class="col-sm-6 portfolio-item-n">
-						<img class="img-fluid d-block m-auto" src="img/guardianAPI.png" width="500rem">
-					</div>
-				</div>
-				<!-- <div class="row">
+        </div>
+        <div class="full-height">
+            <div class="row" id="about">
+                <div class="col-sm-6"><img class="img-fluid m-auto d-block pb-2" width="500em" src="img/me.JPG"></div>
+                <div class="col-sm-6">
+                    <p id="aboutMe" class="w-75">I'm a 23 year old Front-End Developer from Belfast. I graduated in 2020 from Ulster University with First Class Honours in Interactive Multimedia Design BSc.
+                        <br><br> I have a particular interest in front-end design and development using JavaScript and CSS, and in my spare time I'm brushing up on my knowledge of frameworks such as Node and Vue, while learning new skills in the likes
+                        of React.
+                        <br>
+                        <br>You can <a href="AmyLongCV2021.pdf">check out my CV here.</a></p>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio">
+            <div class="full-height">
+                <h4 class="title" style="padding-bottom: 5%;">Portfolio</h4>
+                <div class="row">
+                    <div class="col-sm-6 portfolio-item-n">
+                        <a class="portfolio-item-heading" href="newsSite/news_site.html">
+                            <h2>News site (The Guardian API)</h2>
+                        </a>
+                        <p>This mini-project was created to meet the requirements for one of my final year modules. The brief was to create a website which could dynamically display articles using an API from a news website. The user should be able to click
+                            to read the articles; view different categories; be shown the top stories; and perform a search, both online and offline. The site was also to be a single page application. <br> I used The Guardian's API and JavaScript to complete
+                            this, and used Bootstrap for styling. I also used the OpenWeatherMap API to add an extra feature allowing users to check the weather in their city or search for another city.
+                        </p>
+                    </div>
+                    <div class="col-sm-6 portfolio-item-n">
+                        <img class="img-fluid d-block m-auto" src="img/guardianAPI.png" width="500rem">
+                    </div>
+                </div>
+                <!-- <div class="row">
 		<div class="col-sm-6 portfolio-item-m">
 			<img class="img-fluid d-block m-auto" src="img/itinerator.png" width="500rem">
 		</div>
@@ -105,78 +101,69 @@
 			<p>Itinerator is the application I created for my Major Project in final year. The purpose of the web app is to generate a holiday activity itinerary for users based on their preferences of activity types, and cuisine types for restaurant recommendations. I created this project using Laravel and Vue JS. </p>
 		</div>
 	</div> -->
-				<div class="row">
-					<div class="col-sm-6 portfolio-item-m">
-						<img class="img-fluid d-block m-auto" src="img/travellabapp.png" width="500rem">
-					</div>
-					<div class="col-sm-6 portfolio-item-m">
-						<a class="portfolio-item-heading" href="travelLab/jquery_form.html">
-							<h2>Travel Lab</h2>
-						</a>
-						<p>Travel Lab is a web application I created in fulfilment of one of my final year modules. The
-							assignment brief was to allow a customer to review and update their saved quotation for a
-							package holiday. The data was loaded from a JSON file using AJAX. As the technology for this
-							application is client-side, any updates made to the details weren't required to be submitted
-							back to the server. <br><br>
-							If you want to give the application a go, here's some booking references you can use that
-							will return data: TLB008515, TLB682554, TLB951164 (any name will work). </p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-6 portfolio-item-n">
-						<a class="portfolio-item-heading" href="infographic/infographic.html">
-							<h2>World Population Infographic</h2>
-						</a>
-						<p>The World Population Infographic is something I created for a design module in Year 2 of my
-							degree. I created all the graphics in it using Adobe Illustrator. </p>
-					</div>
-					<div class="col-sm-6 portfolio-item-n">
-						<img class="img-fluid d-block m-auto" src="img/worldpop.png" width="500rem">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="full-height">
-			<h4 id="contact">Get in Touch</h4>
-			<p class="center">If you'd like to work with me or discuss a project, drop me an email to the address below
-				and I'll be in touch.</p><br>
-			<p class="center">
-				<i class="far fa-paper-plane fa-2x"></i>
-				<a href="mailto:amy.long1234@yahoo.com?subject=I saw your portfolio"
-					id="email">amy.long1234@yahoo.com</a>
-			</p>
-		</div>
-	</div>
+                <div class="row">
+                    <div class="col-sm-6 portfolio-item-m">
+                        <img class="img-fluid d-block m-auto" src="img/travellabapp.png" width="500rem">
+                    </div>
+                    <div class="col-sm-6 portfolio-item-m">
+                        <a class="portfolio-item-heading" href="travelLab/jquery_form.html">
+                            <h2>Travel Lab</h2>
+                        </a>
+                        <p>Travel Lab is a web application I created in fulfilment of one of my final year modules. The assignment brief was to allow a customer to review and update their saved quotation for a package holiday. The data was loaded from a
+                            JSON file using AJAX. As the technology for this application is client-side, any updates made to the details weren't required to be submitted back to the server. <br><br> If you want to give the application a go, here's some
+                            booking references you can use that will return data: TLB008515, TLB682554, TLB951164 (any name will work). </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 portfolio-item-n">
+                        <a class="portfolio-item-heading" href="infographic/infographic.html">
+                            <h2>World Population Infographic</h2>
+                        </a>
+                        <p>The World Population Infographic is something I created for a design module in Year 2 of my degree. I created all the graphics in it using Adobe Illustrator. </p>
+                    </div>
+                    <div class="col-sm-6 portfolio-item-n">
+                        <img class="img-fluid d-block m-auto" src="img/worldpop.png" width="500rem">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="full-height">
+            <h4 id="contact">Get in Touch</h4>
+            <p class="center">If you'd like to work with me or discuss a project, drop me an email to the address below and I'll be in touch.</p><br>
+            <p class="center">
+                <i class="far fa-paper-plane fa-2x"></i>
+                <a href="mailto:amy.long1234@yahoo.com?subject=I saw your portfolio" id="email">amy.long1234@yahoo.com</a>
+            </p>
+        </div>
+    </div>
 
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
 
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function () {
-			$(window).scroll(function () {
-				if ($(this).scrollTop() > 100) {
-					$('.scroll-top').fadeIn();
-				} else {
-					$('.scroll-top').fadeOut();
-				}
-			});
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('.scroll-top').fadeIn();
+                } else {
+                    $('.scroll-top').fadeOut();
+                }
+            });
 
-			$('.scroll-top').click(function () {
-				$("html, body").animate({
-					scrollTop: 0
-				}, 100);
-				return false;
-			});
+            $('.scroll-top').click(function() {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 100);
+                return false;
+            });
 
-		});
-
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
-	</script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
-	</script>
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+    </script>
 </body>
 
 </html>
