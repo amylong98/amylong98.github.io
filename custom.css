@@ -1,24 +1,26 @@
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
+
 html {
     scroll-behavior: smooth;
-
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     position: relative;
-    color:#bababa;
+    color: #bababa;
 }
 
 .full-height {
-   min-height: 100vh;
+    min-height: 100vh;
 }
-.active{
+
+.active {
     font-weight: 700 !important;
     color: #F3A712 !important;
-  }
-
+}
 
 .center {
     display: block;
@@ -28,31 +30,36 @@ body {
 h4 {
     text-align: center;
     font-weight: 500;
-    color:#bababa;
-    padding-top:5%;
+    color: #bababa;
+    padding-top: 5%;
 }
 
 .title {
-        padding-top: 20%;
+    padding-top: 20%;
 }
 
 #portfolio {
     padding-bottom: 5%;
+    margin-left: 2em;
+    margin-right: 2em;
 }
+
 #contact {
     padding: 10% 0 5% 0;
 }
+
 nav {
     background-color: #FFFFFF;
 }
+
 .nav-tabs a {
-    color:#F3A712;
+    color: #F3A712;
     font-weight: 300;
     transition: background-color 0.2s ease;
 }
 
 .nav-tabs a:hover {
-    color:#2D2D2A;
+    color: #2D2D2A;
 }
 
 .scroll-top {
@@ -62,13 +69,14 @@ nav {
     bottom: 25px;
     right: 20px;
     display: none;
-  }
-  .scroll-top i {
+}
+
+.scroll-top i {
     display: inline-block;
     color: #F3A712;
-  }
+}
 
-#scrollButton{
+#scrollButton {
     margin-top: 7%;
     text-align: center;
 }
@@ -78,9 +86,10 @@ nav {
 }
 
 #scrollButton a:hover {
-    color:#F3A712;
+    color: #F3A712;
     transition: color 0.2s ease;
 }
+
 
 /* .thumbnail img{
     max-height:280px;
@@ -97,12 +106,13 @@ nav {
 } */
 
 .caption h3 {
-    color:#999797;
+    color: #999797;
 }
 
 a {
-    color:#F3A712;
+    color: #F3A712;
 }
+
 
 /* Back to top button
 #scroll {
@@ -137,11 +147,13 @@ a {
     background-color: #e3e3e3;
     padding: 2rem;
 }
+
 .portfolio-item-m {
     background-color: #ffffff;
     padding: 2rem;
 }
-.icons{
+
+.icons {
     padding: 2em;
     margin: auto;
     display: block;
@@ -163,6 +175,7 @@ a {
     color: #F3A712;
     text-decoration: underline;
 }
+
 .fa-paper-plane {
     color: #F3A712;
 }
@@ -171,7 +184,8 @@ a {
     color: #2D2D2A !important;
     text-decoration: underline;
 }
-@media (max-width: 600px){
+
+@media (max-width: 600px) {
     #aboutMe {
         min-width: 100%;
     }
