@@ -142,6 +142,9 @@ a {
     box-shadow: -10px 10px 15px -5px #F2F2F2;
     position: relative;
     z-index: 2;
+    max-height: 350px;
+    width: 100%;
+    object-fit: cover;
 }
 
 
