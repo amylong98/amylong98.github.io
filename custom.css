@@ -301,6 +301,9 @@ ul li {
     min-height: 155px;
     margin-bottom: 50px;
     /* margin: 0 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .portfolio-item:hover {
@@ -319,7 +322,7 @@ ul li {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 0;
 }
 
 footer {
